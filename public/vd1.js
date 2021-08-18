@@ -29,16 +29,16 @@ class Note extends React.Component{
                 <div className="div-note">                
                     <p>{this.props.children}</p>
                     <input defaultValue={this.props.children} ref="txt"/>
-                    <button onClick={this.save.bind(this)}>Luu</button>
-                    <button onClick={this.cancel.bind(this)}>Huy</button>
+                    <button onClick={this.save.bind(this)}>Lưu</button>
+                    <button onClick={this.cancel.bind(this)}>Huỷ</button>
                 </div>
             );
         } else {
             return(
                 <div className="div-note">                
                     <p>{this.props.children}</p>
-                    <button onClick={this.delete.bind(this)}>Xoa</button>
-                    <button onClick={this.edit.bind(this)}>Sua</button>
+                    <button onClick={this.delete.bind(this)}>Xoá</button>
+                    <button onClick={this.edit.bind(this)}>Sửa</button>
                 </div>
             );
         }
@@ -58,7 +58,7 @@ class List extends React.Component{
        return(
            <div>
             <div id="div-add"></div>
-            <button onClick={addDiv}>Them</button>
+            <button onClick={addDiv}>Thêm</button>
            {
             this.state.mang.map(function(note,index){
                 return <Note key={index} id={index}>{note}</Note>
@@ -87,7 +87,7 @@ class  Inputdiv extends React.Component {
         return(
             <div>
                 <input type="text" ref="txt" placeholder="Enter anything"/>
-                <button onClick={this.add.bind(this)}>Gui</button>
+                <button onClick={this.add.bind(this)}>Gửi</button>
             </div>
         );
     }
