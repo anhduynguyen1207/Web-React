@@ -1,0 +1,29 @@
+.div-album{
+    width: 500px;
+    background-color: yellow;
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px
+}
+hr{
+    visibility: hidden;
+}
+.div-note{
+    width: 150px;
+    padding: 5px;
+    margin: 3px;
+    border: solid 3px red;
+    border-radius: 5px;
+    background-color: #3399ff;
+    
+} 
+.div-list{
+    width: 170px;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    background: #cce5ff;
+}
+
+
+  
